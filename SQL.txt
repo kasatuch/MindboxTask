@@ -1,0 +1,3 @@
+select p.Name as 'Имя продукта', c.Name as 'Имя категории'
+from TableCategories as c join TableProductsTableCategories as pc on c.CategoriesID = pc.CategoriesID
+			         right join TableProducts as p on p.ProductID = pc.ProductID
